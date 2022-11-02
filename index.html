@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>SQL</title>
+</head>
+<body class="body">
+
+    <button class="btn1" type="button">Перезвонить</button>
+        <form id="my-form" class="my-form1" action="https://formspree.io/f/xoqbppaz" method="POST">
+            <div id="nav-icon4">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h2>Оставьте данные и мы вам перезвоним!</h2>
+            <input class="name" type="text" name="Имя" placeholder="Введите имя">
+            <input class="number" type="number" name="Номер телефона" placeholder="Введите номер">
+            <button class="my-form-button" type="submit">Перезвонить мне</button>
+            <div class="form_hidden">
+                <h3>Ожидайте звонка!</h3>
+            </div>
+            <p id="my-form-status"></p>
+        </form>
+
+
+    <script src="./script.js" type="module">
+        import { useForm } from '@formspree/react';
+    </script>
+</body>
+</html>
